@@ -8,7 +8,7 @@ const cors = require("cors");
 const Attendance = require("./models/Attendance");
 const authMiddleware = require("./middlewares/authMiddleware");
 require("dotenv").config();
-// const path = require("path")
+const path = require("path")
 
 const app = express();
 app.use(express.static(path.join(__dirname,"frontend","build")))
