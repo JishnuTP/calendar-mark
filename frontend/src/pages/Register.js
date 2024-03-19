@@ -13,7 +13,7 @@ function RegisterPage() {
     console.log(username,password,role);
     event.preventDefault();
     try {
-      await axios.post('http://calendar-mark.onrender.com/api/register', { username, password, role });
+      await axios.post('http://localhost:3000/api/register', { username, password, role });
       alert('Registration successful');
       // Redirect to login page after successful registration
       window.location.href = '/';
