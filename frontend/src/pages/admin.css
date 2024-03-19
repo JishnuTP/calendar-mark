@@ -1,0 +1,95 @@
+/* CSS for Sidebar */
+* {
+  margin: 0;
+}
+
+.MuiDrawer-root {
+  width: 200px; /* Sidebar width */
+  flex-shrink: 0;
+}
+
+/* CSS for content area */
+.content {
+  margin-top: 64px; /* Height of app bar or top navigation */
+  padding: 20px;
+}
+
+.modal-container {
+  display: flex;
+}
+
+.modal-content {
+  background-color: rgb(176, 143, 143);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.btn {
+  background-color: rgb(99, 158, 226);
+}
+
+.table-container {
+  margin: 20px auto; /* Center the table */
+  width: 80%; /* Set width to 80% of the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+}
+
+.admin-cont {
+  background: linear-gradient(to bottom right, #928784, #feb47b); 
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  max-width: 460px; /* Limit the width of the modal for smaller screens */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(84, 80, 80, 0.409);
+  margin-left: 50%;
+  margin-top: 20%;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-cont {
+      padding: 10px;
+  }
+
+  .table-container {
+      width: 100%;
+  }
+
+  .modal-container {
+      width: 90%;
+  }
+}
