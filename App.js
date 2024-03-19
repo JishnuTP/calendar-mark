@@ -11,7 +11,7 @@ require("dotenv").config();
 // const path = require("path")
 
 const app = express();
-// app.use(express.static(path.join(__dirname,"frontend","build")))
+app.use(express.static(path.join(__dirname,"frontend","build")))
 app.use(bodyParser.json());
 
 app.use(cors())
@@ -27,9 +27,9 @@ mongoose.connect(process.env.MONGODB_URL, {
 
 //backend functions
 
-// app.get("/",(req,res)=>{
-//     res.sendFile(path.join(__dirname,"frontend","build","index.html"))
-// })
+app.get("/",(req,res)=>{
+    res.sendFile(path.join(__dirname,"frontend","build","index.html"))
+})
 
 app.post("/api/register", async (req, res) => {
 
